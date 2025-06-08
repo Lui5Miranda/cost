@@ -63,7 +63,7 @@ export function Projects() {
     <div className={styles.projectContainer}>
       <div className={styles.titleContainer}>
         <h1>Meus projetos</h1>
-        <LinkButton to="/newproject" text="Criar Projet" />
+        <LinkButton to="/newproject" text="Criar Projeto" />
       </div>
       {message && <Message type="success" msg={message} />}
       {projectMessage && <Message type="success" msg={projectMessage} />}

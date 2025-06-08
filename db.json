@@ -45,6 +45,17 @@
           "id": "4f794408-d5e7-4eb4-a3ef-056452392281"
         }
       ]
+    },
+    {
+      "id": "f067",
+      "name": "Luis",
+      "budget": "2000",
+      "category": {
+        "id": 3,
+        "name": "Design"
+      },
+      "cost": 0,
+      "services": []
     }
   ],
   "categories": [
