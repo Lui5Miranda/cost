@@ -137,7 +137,44 @@ export function Project() {
       .catch(error => console.log(error));
   }
 
-  function removeService() {}
+  function removeService(id : string, cost: number) {
+
+    setMessage("");
+    setType("");
+
+    const servicesUpdated = project?.services.filter(
+      (service) => service.id !== id
+    );
+
+    const projectUpdated = project;
+    
+    if (!projectUpdated) {
+      setMessage("Projeto nao encontrado!");
+      setType("error");
+      return
+    };
+
+    projectUpdated.services = servicesUpdated!;
+
+    projectUpdated.cost = Number(projectUpdated.cost) - Number(cost);
+
+    fetch(`http://localhost:5000/projects/${projectUpdated.id}`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(projectUpdated),
+    })
+    .then(resp => resp.json())
+    .then(() => {
+      setProject(projectUpdated);
+      setServices(servicesUpdated!);
+      setMessage("Servico removido com sucesso!");
+      setType("success");
+    })
+    .catch(error => console.log(error));
+
+  }
 
   function toggleProjectForm() {
     setShowProjectForm(!showProjectForm);

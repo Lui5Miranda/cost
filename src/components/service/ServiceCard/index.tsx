@@ -7,7 +7,7 @@ interface ServiceCardProps {
   name: string;
   cost: number;
   description: string;
-  handleRemove: (id: string) => void;
+  handleRemove: (id: string, cost: number) => void
 }
 
 
@@ -15,7 +15,7 @@ export function ServiceCard({id, name, cost, description, handleRemove}: Service
 
   const remove = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault()
-    handleRemove(id)
+    handleRemove(id, cost)
   }
 
   return(
