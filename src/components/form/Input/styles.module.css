@@ -1,0 +1,39 @@
+.formControle {
+  display: flex;
+  flex-direction: column;
+  margin: 0.4rem 0;
+}
+
+
+
+.formControle input{
+  background-color: transparent;
+  font-size: 1rem;
+  color: var(--gray-700);
+  outline: none;
+  border: 0.2rem  solid transparent;
+  border-bottom: 0.2rem  solid var(--primary);
+  transition: all 0.1s ease-in-out;
+  padding: 0.4rem 0.4rem;
+}
+
+.formControle label {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.formControle input:focus{
+  border-radius: 0.4rem;
+  border: 0.2rem solid var(--primary);
+}
+
+.formControle input::placeholder{
+  color: var(--gray-500);
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.formControle:disabled{
+  border-bottom: 0.2rem solid var(--disabled);
+  color: var(--text-muted);
+}

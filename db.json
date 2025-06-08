@@ -1,0 +1,86 @@
+{
+  "projects": [
+    {
+      "id": "4138",
+      "name": "Luis",
+      "budget": "66665",
+      "category": {
+        "id": 1,
+        "name": "Infra"
+      },
+      "cost": 0,
+      "services": []
+    },
+    {
+      "id": "34c8",
+      "name": "Preservação da Água ",
+      "budget": "4000",
+      "category": {
+        "id": 4,
+        "name": "Planejamento"
+      },
+      "cost": 455,
+      "services": [
+        {
+          "id": "0b3e6036-5bb8-4fa4-95ce-674e6fde425a",
+          "name": "Luis Fernando Aparecido Miranda ",
+          "cost": "111",
+          "description": "Nobru"
+        },
+        {
+          "name": "Luis",
+          "cost": "122",
+          "description": "Nobru",
+          "id": "09805871-8f41-4dda-b089-6b07c5b3bee6"
+        },
+        {
+          "cost": "222",
+          "description": "Nobru",
+          "id": "9782ba7e-7934-4584-b7ad-21897160fdd2"
+        }
+      ]
+    },
+    {
+      "id": "c4d0",
+      "name": "Luis",
+      "budget": "1234",
+      "category": {
+        "id": 1,
+        "name": "Infra"
+      },
+      "cost": 1234,
+      "services": [
+        {
+          "name": "Contratar gestor de rede",
+          "cost": "1200",
+          "description": "Auxiliar na gestão de redes",
+          "id": "8f277da2-8dfe-4812-bd53-757bc49587be"
+        },
+        {
+          "name": "Contratar PHP developer",
+          "cost": "34",
+          "description": "Desenvolvimento do site ",
+          "id": "4f794408-d5e7-4eb4-a3ef-056452392281"
+        }
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Infra"
+    },
+    {
+      "id": "2",
+      "name": "Desenvolvimento"
+    },
+    {
+      "id": "3",
+      "name": "Design"
+    },
+    {
+      "id": "4",
+      "name": "Planejamento"
+    }
+  ]
+}
